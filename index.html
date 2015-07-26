@@ -9,9 +9,115 @@
 	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
 </head>
 
-<body>
-   <h1>Hola como estan</h1>
+<body onload="OnBodyLoad()">
+   
+  <!-- PAGINA 1 INICIO  -->
+  <div data-role="page" id="detalle">
+      <div data-role="header">
+          <div class="ui-btn-left">
+             <a href="#form" data-role="button" data-inline="true" data-icon="plus" data-iconpos="notext">Nuevo</a>
+          </div>  
+
+          <div class="ui-btn-right">
+             <a href="#contactos" data-role="button" data-inline="true" data-icon="grid" data-iconpos="notext">Contactos</a>
+          </div>  
+
+          <h1>Encabezado</h1>
+      </div>
+
+      <div data-role="content" data-theme="a">
+          <div data-role="collapsible-set">
+             <div data-role="collapsible">
+                 <h3>Familia</h3>
+                 <ul data-role="listview" data-inset="true" data-split-icon="edit">
+                    <li><a href="#">Pagina1</a><a href="#">Predet.</a></li>
+                    <li><a href="#">Pagina2</a><a href="#">Predet.</a></li>
+                </ul>
+             </div>
+             <div data-role="collapsible" data-collapsed="true">
+                 <h3>Familia</h3>
+                 <p>Contenido</p>
+             </div>
+             <div data-role="collapsible" data-collapsed="true">
+                 <h3>Familia</h3>
+                 <p>Contenido</p>
+             </div>
+          </div>
+      </div>
+
+      <footer data-role="footer" style="position: fixed;width: 100%;text-align:center">
+           <p>Pie</p>
+      </footer> 
+  </div>
+  <!-- PAGINA 1 FIN  -->
+
+  <!-- PAGINA 2 INICIO -->
+  <div data-role="page" id="form">
+     <div data-role="header">
+       <h1>Encabezado</h1>
+     </div>
+
+     <div data-role="content">
+       
+        <div data-role="fieldcontain">
+          <input type="text" name="txt_nombre" placeholder="Nombre"></input>
+        </div>
+        
+        <div data-role="fieldcontain">
+          <input type="text" name="txt_apellido" placeholder="Apellido"></input>
+        </div>
+
+        <div data-role="fieldcontain">
+          <input type="number" name="txt_telefono" placeholder="Teléfono"></input>
+        </div>
+        
+        <div data-role="fieldcontain">
+          <input type="text" name="txt_direccion" placeholder="Dirección"></input>
+        </div>
+
+        <div data-role="fieldcontain" style="display:inline-block">
+          <fieldset data-role="controlgroup" data-type="horizontal">
+              <input type="radio" name="rad_num1" id="cat_trabajo" value="Trabajo"/>
+              <label for="cat_trabajo">Trabajo</label>
+              <input type="radio" name="rad_num1" id="cat_familia" value="Familia"/>
+              <label for="cat_familia">Familia</label>
+              <input type="radio" name="rad_num1" id="cat_amigos" value="Amigos"/>
+              <label for="cat_amigos">Amigo</label>
+          </fieldset>
+        </div>
+
+        <button id="btn_guardar">Guardar</button>
+     </div>
+  </div>
+  <!-- PAGINA 2 FIN -->
+
+  <!-- PAGINA 3 INICIO -->
+  <div data-role="page" id="contactos">
+     <div data-role="header">
+       <h1>Encabezado</h1>  
+     </div>
+
+     <div data-role="content">
+       Contenido
+     </div>
+  </div>
+  <!-- PAGINA 3 FIN -->
+
+  <!-- PAGINA 4 INICIO -->
+  <div data-role="page" id="mail_page">
+     <div data-role="header">
+       <h1>Encabezado</h1>  
+     </div>
+
+     <div data-role="content">
+       Contenido
+     </div>
+  </div>
+  <!-- PAGINA 4 FIN -->
+
 </body>
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <!-- <script src="phonegap.js" type="text/javascript" charset="utf-8"></script>  -->
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8" src="js/controller.js"></script>
 </html>
