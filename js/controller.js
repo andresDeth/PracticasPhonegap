@@ -13,7 +13,7 @@ function onDeviceReady(){
   //Acelerometro: Ejecuta una unica vez
 	//navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
   //Ejecuta en periodos de tiempo repetitivamente
-  var watch= navigator.accelerometer.watchAcceleration(onSuccess, onError,{frequency: 1000});
+  var watch= navigator.accelerometer.watchAcceleration(onSuccess, onError,{frequency: 100});
 }
 
 function onSuccess(acceleration) {
