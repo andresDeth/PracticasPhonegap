@@ -4,8 +4,8 @@
  //  });
 
 function OnBodyLoad(){
-   //document.addEventListener("deviceready", onDeviceReady, false);
-   onDeviceReady();
+   document.addEventListener("deviceready", onDeviceReady, false);
+   //onDeviceReady();
 }
 
 
