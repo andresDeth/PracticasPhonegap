@@ -14,6 +14,22 @@ function onDeviceReady(){
 	//navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
   //Ejecuta en periodos de tiempo repetitivamente
   var watch= navigator.accelerometer.watchAcceleration(onSuccess, onError,{frequency: 100});
+
+  $("#notifi_1").on('vclick',function(evt){
+     //Mostrar mensajes en dialogo
+     navigator.notification.alert("Bienvenidos",function(){},"Alerta","Cerrar");
+
+     //Preguntar al usuario una confirmacion
+     navigator.notification.confirm("Esta seguro",function(buttonIndex){},"Confirmacion",["Si","No"]);
+
+     //Solicita al usuario un valor en un cuadro de dialogo
+     navigator.notification.prompt("Mensaje prompt",function(buttonIndex, txt_entrada){},"Promt",["Si","Cancelar"],"Mensaje");
+  });
+  
+  $("#notifi_2").bind('tap',function(evt){
+  navigator.notification.beep(2);
+  navigator.notification.vibrate(1000);
+  });
 }
 
 function onSuccess(acceleration) {
