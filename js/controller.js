@@ -26,7 +26,7 @@ function onDeviceReady(){
      navigator.notification.prompt("Mensaje prompt",function(buttonIndex, txt_entrada){},"Promt",["Si","Cancelar"],"Mensaje");
   });
   
-  $("#notifi_2").bind('tap',function(evt){
+  $("#notifi_2").on('vclick',function(evt){
   navigator.notification.beep(2);
   navigator.notification.vibrate(1000);
   });
