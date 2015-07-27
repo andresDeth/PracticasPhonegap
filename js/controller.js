@@ -30,6 +30,8 @@ function onDeviceReady(){
   navigator.notification.vibrate(3000);
   navigator.notification.beep(2);
   });
+
+   $("#geolocaliza").on('pageinit',function_geo);
 }
 
 function onSuccess(acceleration) {
@@ -45,7 +47,7 @@ function onError(tx,error) {
 
 //Funcion que utiliza el GPS
 function function_geo(){
-   $("resultado4").html("Esperando al GPS");
+   $("#resultado4").html("Esperando al GPS");
    
    var watch = navigator.geolocation.watchPosition(onInfo,onErrorGPS,{timeout:30000});
 }
