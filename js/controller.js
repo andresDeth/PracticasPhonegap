@@ -27,7 +27,7 @@ function onDeviceReady(){
   });
   
   $("#notifi_2").on('vclick',function(evt){
-  navigator.notification.vibrate(3000);
+  //navigator.notification.vibrate(3000);
   navigator.notification.beep(2);
   });
 
@@ -49,7 +49,8 @@ function onError(tx,error) {
 function function_geo(){
    $("#resultado4").html("Esperando al GPS");
    
-   var watch = navigator.geolocation.watchPosition(onInfo,onErrorGPS,{timeout:30000});
+   //var watch = navigator.geolocation.watchPosition(onInfo,onErrorGPS,{timeout:30000});
+   var watchID = navigator.geolocation.watchPosition(onInfo, onErrorGPS, { enableHighAccuracy: true });
 }
 
 function onInfo(info){
