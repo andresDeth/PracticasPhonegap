@@ -33,9 +33,9 @@ function onDeviceReady(){
 
    $("#geolocaliza").on('pageinit',function_geo); //GPS
 
-   $("btn_saveContact").on('vclick',function_Agenda); // Agenda de contactos
+   $("#btn_saveContact").on('vclick',function_Agenda); // Agenda de contactos
 
-   $("btn_StartVideo").on('vclick',function_Media); // Reproductor de video
+   $("#btn_StartVideo").on('vclick',function_Media); // Reproductor de video
 }
 
 function onSuccess(acceleration) {
