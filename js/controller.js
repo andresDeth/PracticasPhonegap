@@ -74,9 +74,9 @@ function onErrorGPS(error){
 
 //Funciones que utilizamos para guardar un contacto
 function function_Agenda(evt){
-   evt.preventDefault();
-   evt.stopInmediatePropagation();
-
+   //evt.preventDefault();
+   //evt.stopInmediatePropagation();
+   alert("Hola Contacto");
    var mycontacto = navigator.contacts.create();
 
    mycontacto.displayName= "PruebaCont";
@@ -103,9 +103,9 @@ function OnErrorContact(error){
 
 //Funciones utilizadas para reproducir un video
 function function_Media(evt){
-   evt.preventDefault();
-   evt.stopInmediatePropagation();
-    
+   //evt.preventDefault();
+   //evt.stopInmediatePropagation();
+   alert("Hola Audio");
    playAudio("http://audio.ibeat.org/?ccm=/api/query/stream.m3u&f=m3u&ids=697");
 }
 
