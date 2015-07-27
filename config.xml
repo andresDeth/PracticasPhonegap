@@ -21,6 +21,8 @@
    <gap:plugin name="org.apache.cordova.device-motion" version="0.2.10" />
    <gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
    <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
+   <gap:plugin name="org.apache.cordova.contacts" version="0.2.13" />
+   <gap:plugin name="org.apache.cordova.media" version="0.2.13" />
 
    <preference name="permissions" value="none"/>
 
