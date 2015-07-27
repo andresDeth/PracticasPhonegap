@@ -53,7 +53,7 @@ function function_geo(){
    var watchID = navigator.geolocation.watchPosition(onInfo, onErrorGPS, { enableHighAccuracy: true });
 }
 
-function onInfo(info){
+function onInfo(position){
     $("#resultado4").html('Latitude: '    + position.coords.latitude          + '</br>' +
 					'Longitude: '         + position.coords.longitude         + '</br>' +
 					'Altitude: '          + position.coords.altitude          + '</br>' +
