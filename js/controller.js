@@ -106,7 +106,7 @@ function function_Media(evt){
    //evt.preventDefault();
    //evt.stopInmediatePropagation();
    alert("Hola Audio");
-   playAudio("http://audio.ibeat.org/?ccm=/api/query/stream.m3u&f=m3u&ids=697");
+   playAudio("htttp://audio.ibeat.org/content/plrjls/plrjls_-_rockGuitar.mp3");
 }
 
 var media= null;
